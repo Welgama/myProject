@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simple Quiz</h1>
+    <div id="quiz-container">
+        <button onclick="startQuiz()">Start Quiz</button>
+        <p id="timer"></p>
+        <p id="question"></p>
+        <ul id="options">
+            <!-- Options will be dynamically added here -->
+        </ul>
+        <button id="submitBtn" onclick="checkAnswer()" style="display: none;">Submit</button>
+    </div>
+    <div id="result" style="display: none;">
+        <h2>Quiz Completed!</h2>
+        <p>Your score: <span id="score"></span> out of <span id="totalQuestions"></span></p>
+        <button onclick="restartQuiz()">Try Again</button>
+        <button onclick="reloadQuiz()">Reload Quiz</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
